@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduManage - Estudiantes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/icon.png">
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="Logo EduManage" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="crud.html">Estudiantes</a></li>
+                <li><a href="modelo.html">Modelo BD</a></li>
+                <li><a href="logica.html">Lógica</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Gestión de Estudiantes</h1>
+
+        <section class="formulario">
+            <h2>Registrar estudiante</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" required>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono">
+
+                <button type="submit">Guardar</button>
+            </form>
+        </section>
+
+        <section class="tabla">
+            <h2>Lista de Estudiantes</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Correo</th>
+                        <th>Teléfono</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>María</td>
+                        <td>López</td>
+                        <td>maria@example.com</td>
+                        <td>3123456789</td>
+                        <td>
+                            <button>Editar</button>
+                            <button>Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 EduManage - Todos los derechos reservados.</p>
+        <div class="redes">
+           <a href="#">📨Facebook</a> 
+            <a href="#">🐱‍🐉Instagram</a> 
+            <a href="#">🦆Twitter</a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduManage - Lógica</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/icon.png">
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="Logo EduManage" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="crud.html">Estudiantes</a></li>
+                <li><a href="modelo.html">Modelo BD</a></li>
+                <li><a href="logica.html">Lógica</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Ejercicio de Lógica de Programación</h1>
+        <p>Ingresa tres notas para calcular el promedio:</p>
+
+        <div class="formulario">
+            <input type="number" id="nota1" placeholder="Nota 1" min="0" max="5">
+            <input type="number" id="nota2" placeholder="Nota 2" min="0" max="5">
+            <input type="number" id="nota3" placeholder="Nota 3" min="0" max="5">
+            <button onclick="calcularPromedio()">Calcular promedio</button>
+            <p id="resultado"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 EduManage - Todos los derechos reservados.</p>
+        <div class="redes">
+          <a href="#">📨Facebook</a> 
+            <a href="#">🐱‍🐉Instagram</a> 
+            <a href="#">🦆Twitter</a>
+        </div>
+    </footer>
+
+    <script>
+        function calcularPromedio() {
+            let n1 = parseFloat(document.getElementById("nota1").value);
+            let n2 = parseFloat(document.getElementById("nota2").value);
+            let n3 = parseFloat(document.getElementById("nota3").value);
+
+            if (isNaN(n1) || isNaN(n2) || isNaN(n3)) {
+                document.getElementById("resultado").innerText = "Por favor, ingresa las tres notas.";
+                return;
+            }
+
+            let promedio = (n1 + n2 + n3) / 3;
+            document.getElementById("resultado").innerText = "Promedio: " + promedio.toFixed(2);
+        }
+    </script>
+</body>
+</html>
