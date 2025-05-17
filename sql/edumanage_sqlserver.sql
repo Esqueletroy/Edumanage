@@ -1,10 +1,11 @@
-CREATE DATABASE EduManage;
+CREATE DATABASE EduManage_1;
 GO
 
-USE EduManage;
+USE EduManage_1;
 GO
 
- CREATE TABLE Estudiantes (
+
+CREATE TABLE Estudiantes (
     Id INT IDENTITY(1,1) PRIMARY KEY,
     Nombre NVARCHAR(100) NOT NULL,
     Apellido NVARCHAR(100) NOT NULL,
@@ -12,15 +13,15 @@ GO
     Telefono NVARCHAR(20),
     Fecha_Registro DATE DEFAULT GETDATE()
 );
-GO
 
- CREATE TABLE Cursos (
+
+CREATE TABLE Cursos (
     Id INT IDENTITY(1,1) PRIMARY KEY,
     Nombre NVARCHAR(100) NOT NULL
 );
-GO
 
- CREATE TABLE Matriculas (
+
+CREATE TABLE Matriculas (
     Id INT IDENTITY(1,1) PRIMARY KEY,
     Id_Estudiante INT,
     Id_Curso INT,
@@ -28,4 +29,20 @@ GO
     FOREIGN KEY (Id_Estudiante) REFERENCES Estudiantes(Id),
     FOREIGN KEY (Id_Curso) REFERENCES Cursos(Id)
 );
-GO
+
+
+CREATE TABLE Profesores (
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    Nombre NVARCHAR(100) NOT NULL,
+    Especialidad NVARCHAR(100),
+    Correo NVARCHAR(100) UNIQUE
+);
+
+
+CREATE TABLE Asignaciones (
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    Id_Profesor INT,
+    Id_Curso INT,
+    FOREIGN KEY (Id_Profesor) REFERENCES Profesores(Id),
+    FOREIGN KEY (Id_Curso) REFERENCES Cursos(Id)
+);
