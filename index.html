@@ -1,66 +1,69 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EduManage - Inicio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="img/icon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduManage - Inicio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <img src="img/logo.png" alt="Logo EduManage" class="logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="crud.html">Estudiantes</a></li>
-                <li><a href="modelo.html">Modelo BD</a></li>
-                <li><a href="logica.html">Lógica</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section class="banner">
-        <img src="img/banner.jpg" alt="Banner EduManage">
-        <div class="texto-banner">
-            <h1>Bienvenido a EduManage</h1>
-            <p>Tu sistema de gestión escolar simple, moderno y funcional.</p>
-        </div>
-    </section>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><i class="fas fa-graduation-cap"></i> EduManage</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="crud.html">Estudiantes</a></li>
+        <li class="nav-item"><a class="nav-link" href="modelo.html">Modelo BD</a></li>
+        <li class="nav-item"><a class="nav-link" href="logica.html">Lógica</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-    <main>
-        <section class="contenido">
-            <h2>¿Qué es EduManage?</h2>
-            <p>EduManage es una plataforma web que permite administrar estudiantes de manera eficiente. Desde el registro hasta el seguimiento académico.</p>
-            
-            <section class="caracteristicas">
-    <h2>¿Qué puedes hacer con EduManage?</h2>
-    <ul>
-        <li>📋 Registrar estudiantes con datos completos</li>
-        <li>📚 Asignar cursos y realizar matrículas</li>
-        <li>📊 Calcular promedios de notas</li>
-        <li>🗂️ Consultar el modelo de base de datos</li>
-        <li>✉️ Enviar formularios de contacto simulados</li>
-    </ul>
+<div id="carouselExampleCaptions" class="carousel slide mb-5" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/banner-1559399_1280.jpg" class="d-block w-100" alt="Imagen 1">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Bienvenido a EduManage</h5>
+        <p>Organiza tus clases y estudiantes desde una sola plataforma.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/banner.jpg" class="d-block w-100" alt="Imagen 2">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Gestión de Cursos</h5>
+        <p>Matrículas, profesores y contenidos conectados.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/banner 1.webp" class="d-block w-100" alt="Imagen 3">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Estadísticas y seguimiento</h5>
+        <p>Consulta datos y mejora la experiencia educativa.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Siguiente</span>
+  </button>
+</div>
 
-    <section class="acerca">
-    <h2>Acerca del proyecto</h2>
-    <p>EduManage fue desarrollado para el proyecto integrador algo sencillo pero se intento cada vez se puede mejorar mas y mas 🚀🚀🚀</p>
-</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 
-</section>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2025 EduManage - Todos los derechos reservados.</p>
-        <div class="redes">
-            <a href="#">📨Facebook</a> 
-            <a href="#">🐱‍🐉Instagram</a> 
-            <a href="#">🦆Twitter</a>
-        </div>
-    </footer>
 </body>
 </html>
